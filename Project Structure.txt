@@ -1,0 +1,16 @@
+TeklaFrameGenerator/
+├── FrameGeneratorPlugin.cs
+├── UI/
+│   ├── MainForm.cs
+│   ├── MainForm.Designer.cs
+│   ├── BayTab.cs
+│   ├── GeometryTab.cs
+│   ├── TrussTab.cs
+│   └── DeckSlabTab.cs
+├── Model/
+│   ├── FrameGenerator.cs
+│   ├── Bay.cs
+│   ├── Frame.cs
+│   └── Truss.cs
+└── Helpers/
+    └── TeklaHelpers.cs
