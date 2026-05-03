@@ -1,0 +1,181 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options directory
+.vs/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio cache directory
+.vs/
+
+# Gradle cache directory
+.gradle/
+
+# NuGet Restore Lock files
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+coverage.xml
+coverage/
+
+# Tekla Structures specific
+.tekla/
+Tekla.Structures.ini
+*.aps
+*.clw
+*.scc
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.msi
+*.cab
+*.appx
+*.msix
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Build folder
+artifacts/
+publish/
+
+# Entity Framework
+*.edmx.diagram
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.rar
+*.7z
+*.zip
+*.tar.gz
+
+# IDE files
+*.ncb
+.cproject
+.project
+
+# StyleCop cache
+StyleCopCache/
+
+# File-based project format
+*.ipr
+
+# Visual Studio LightSwitch build output
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
+
+# FAKE - F# Make
+.fake/
+
+# FxCop results
+FxCopReport.html
+
+# Code quality
+sonarqube-report.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Documentation generated
+docs/_build/
+docs/.doctrees/
+
+# Local development settings
+local.settings.json
+.env
+.env.local
+.env.*.local
+appsettings.local.json
+
+# User-generated content
+output/
+results/
+exports/
+generated/
+
+# Cache
+.cache/
+node_modules/
+
+# Miscellaneous
+.~lock.*
