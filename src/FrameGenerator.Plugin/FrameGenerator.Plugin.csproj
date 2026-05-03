@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <TargetFramework Condition="'$(BuildingForTekla2024)' == 'true'">net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>FrameGenerator</AssemblyName>
+    <RootNamespace>FrameGenerator.Plugin</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <OutputType>Library</OutputType>
+    <Platforms>AnyCPU</Platforms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Tekla Structures API References -->
+    <Reference Include="Tekla.Structures">
+      <HintPath>$(TEKLA_STRUCTURES_DIRECTORY)\bin\Tekla.Structures.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tekla.Structures.Model">
+      <HintPath>$(TEKLA_STRUCTURES_DIRECTORY)\bin\Tekla.Structures.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tekla.Structures.Plugins">
+      <HintPath>$(TEKLA_STRUCTURES_DIRECTORY)\bin\Tekla.Structures.Plugins.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Tekla.Structures.Drawing">
+      <HintPath>$(TEKLA_STRUCTURES_DIRECTORY)\bin\Tekla.Structures.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FrameGenerator.Core\FrameGenerator.Core.csproj" />
+    <ProjectReference Include="..\FrameGenerator.DataModels\FrameGenerator.DataModels.csproj" />
+    <ProjectReference Include="..\FrameGenerator.UI\FrameGenerator.UI.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <DefineConstants Condition="'$(Configuration)' == 'Debug'">$(DefineConstants);DEBUG</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)' == 'Release'">$(DefineConstants);RELEASE</DefineConstants>
+  </PropertyGroup>
+</Project>
